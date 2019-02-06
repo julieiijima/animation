@@ -1,0 +1,97 @@
+/* Stylesheet */
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+.grid_container {
+    width: 400px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    top: 40%; /* for optical centering */
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    background: url("../images/ocean.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.mono {
+    font-family: 'Lobster', cursive;
+    font-size: 7em;
+    float: left;
+    margin-left: 5px;
+}
+
+/* Animation ideas: 'p' fades, 'l' sparkles, 'c' and 'l' appears */
+@keyframes p_fade {
+    0% {opacity: 100;}
+    20% {opacity: 50;}
+    100% {opacity: 0;}
+}
+
+.p {
+    animation: p_fade 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes c_appear {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    40% {opacity: 0;}
+    60% {opacity: 50;}
+    80% {opacity: 70;}
+    100% {opacity: 100 ; }
+}
+
+.c {
+    position: relative;
+    left: -255px;
+    animation: c_appear 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes l_fade {
+    0% {opacity: 100;}
+    20% {opacity: 50;}
+    100% {opacity: 0;}
+}
+
+.l {
+    animation: l_fade 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes l2_appear {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    40% {opacity: 0;}
+    60% {opacity: 50;}
+    80% {opacity: 70;}
+    100% {opacity: 100; }
+}
+.l2 {
+    position: relative;
+    left: -252px;
+    animation: l2_appear 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes e_appear {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    40% {opacity: 0;}
+    60% {opacity: 50;}
+    80% {opacity: 70;}
+    100% {opacity: 100;}
+
+.e {
+    animation: l_fade 1s;
+    animation-fill-mode: forwards;
+}
+
